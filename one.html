@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jwjc</title>
+
+    <!-- Bootstrap -->
+    <link href="../jwjc/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <style type="text/css"> 
+     .ssd {
+      color: red;
+      background-color:rgb(67,191,227);
+      border-color: #ccc;
+    }
+     </style>	
+
+  </head>
+  <body>
+    <center><h1>欢迎进行评议</h1></center>
+	<nav>
+	  <ul class="pager">
+		<li class="next"><a href="#"><span>教师</span></a></li>
+		<li class="next"><a href="login.asp?adminaction=logout">退出</a></li>
+	  </ul>
+	</nav>
+	
+	
+
+	
+	
+	
+	<div class="container">
+	<p>注：蓝色表示已经填写</p>
+		<div class="row" style="margin:2%;">
+		  <div class="col-md-4"><button id="btnone" type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#oneone">党委办公室、校长办公室</button></div>
+		  <div class="col-md-4"><button id="btntwo" type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#twotwo">党委组织部、组织员办公室</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">党委宣传部、新闻中心、文化中心、济南大学报社</button></div>
+		  
+		</div>
+		<div class="row" style="margin:2%;">
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">党委统战部、港澳台事务办公室</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">党委学生工作部（处）</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">党委保卫部、武装部、安全管理处</button></div>	  
+		</div>
+		<div class="row" style="margin:2%;">
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">人事处</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">教务处</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">学科建设与发展处</button></div>
+		  
+		</div>
+		<div class="row" style="margin:2%;">
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">科技处、国防科研工作办公室</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">社科处</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">研究生院、党委研究生工作部</button></div>
+		</div>
+		<div class="row" style="margin:2%;">
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">国际合作与交流处</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">实验室建设与管理处</button></div>
+		  <div class="col-md-4"><button type="button" class="btn btn-default btn-lg">计划财务处</button></div>
+		  
+		  
+		</div>
+		<div class="row" style="margin:2%;">
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">审计处</button></div>
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">基建与资产管理处</button></div>
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">后勤与产业管理处</button></div>
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">离退休工作处</button></div>
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">服务地方办公室、服务济南办公室</button></div>
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">校友工作办公室</button></div>
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">法律事务中心</button></div>
+		  <div class="col-md-3"><button type="button" class="btn btn-default btn-lg">计划财务处</button></div>
+		</div>
+	</div>
+	
+	<div>
+			<!-- Modal -->
+	<div class="modal fade" id="twotwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		  </div>
+		  <div class="modal-body">
+  <div id="医院、计划生育办公室" style=" margin-left:20px;" class="aaa"> 
+
+		
+
+	 <div align="center" class="lan18b" style="margin-bottom:10px;">医院、计划生育办公室</div>
+
+	 
+	 <form action="?adminaction=editsave" name="form" method="post">
+	 <input name="bumen" type="hidden" value="医院、计划生育办公室" />
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+
+	  <tr>
+		<td  class="yiti" height="35">服务质量 <span style="color:#999999; font-size:14px;">(强化服务意识、遵守职业道德，爱岗敬业、恪尽职守，热情周到、耐心细致，保证工作质量、提高师生满意率。)</span></td>
+	  </tr>
+	  <tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+		  <tr>
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang1" type="radio" value="医院、计划生育办公室,1,1" /></td>
+		<td width="10%" class="xuanxiang">满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang1" type="radio" value="医院、计划生育办公室,1,2" /></td>
+		<td width="10%" class="xuanxiang">基本满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang1" type="radio" value="医院、计划生育办公室,1,3" /></td>
+		<td width="10%" class="xuanxiang">不了解</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang1" type="radio" value="医院、计划生育办公室,1,25" /></td>
+		<td width="10%" class="xuanxiang">不满意</td>
+
+
+
+		<td width="3%" class="xuanxiang">&nbsp;</td>
+
+		  </tr>
+		  
+		</table>
+
+		</td>
+	  </tr>
+
+	  <tr>
+		<td  class="yiti" height="35">工作业绩 <span style="color:#999999; font-size:14px;">(规章制度完善、执行规章制度到位，规范信息公开、优化办事程序，注重协调配合、按时办结工作事项，创新工作方式方法、努力解决工作难题。)</span></td>
+	  </tr>
+	  <tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+		  <tr>
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang2" type="radio" value="医院、计划生育办公室,5,1" /></td>
+		<td width="10%" class="xuanxiang">满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang2" type="radio" value="医院、计划生育办公室,5,2" /></td>
+		<td width="10%" class="xuanxiang">基本满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang2" type="radio" value="医院、计划生育办公室,5,3" /></td>
+		<td width="10%" class="xuanxiang">不了解</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang2" type="radio" value="医院、计划生育办公室,5,25" /></td>
+		<td width="10%" class="xuanxiang">不满意</td>
+
+
+
+		<td width="3%" class="xuanxiang">&nbsp;</td>
+
+		  </tr>
+		  
+		</table>
+
+		</td>
+	  </tr>
+
+	  <tr>
+		<td  class="yiti" height="35">工作纪律 <span style="color:#999999; font-size:14px;">(遵守工作时间、履行岗位职责，工作精神状态饱满、保证工作质量和时效，工作时间不做与工作无关的事情。)</span></td>
+	  </tr>
+	  <tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+		  <tr>
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang3" type="radio" value="医院、计划生育办公室,3,1" /></td>
+		<td width="10%" class="xuanxiang">满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang3" type="radio" value="医院、计划生育办公室,3,2" /></td>
+		<td width="10%" class="xuanxiang">基本满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang3" type="radio" value="医院、计划生育办公室,3,3" /></td>
+		<td width="10%" class="xuanxiang">不了解</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang3" type="radio" value="医院、计划生育办公室,3,25" /></td>
+		<td width="10%" height="30" align="center" ><label><input name="xuanxiang3" style="display:none;" type="radio" value="党委办公室、校长办公室,5,1" />满意</label></td>
+
+
+
+		<td width="3%" class="xuanxiang">&nbsp;</td>
+
+		  </tr>
+		  
+		</table>
+
+		</td>
+	  </tr>
+
+	  <tr>
+		<td  class="yiti" height="35">廉洁自律 <span style="color:#999999; font-size:14px;">(认真落实党风廉政建设责任制，遵守中央八项规定，讲规矩、守纪律，厉行节约、公私分明。)</span></td>
+	  </tr>
+	  <tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+		  <tr>
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="医院、计划生育办公室,6,1" /></td>
+		<td width="10%" class="xuanxiang">满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="医院、计划生育办公室,6,2" /></td>
+		<td width="10%" class="xuanxiang">基本满意</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="医院、计划生育办公室,6,3" /></td>
+		<td width="10%" class="xuanxiang">不了解</td>
+
+
+
+
+		<td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="医院、计划生育办公室,6,25" /></td>
+		<td width="10%" class="xuanxiang">不满意</td>
+
+
+
+		<td width="3%" class="xuanxiang">&nbsp;</td>
+
+		  </tr>
+		  
+		</table>
+
+		</td>
+	  </tr>
+
+	  <tr>
+		<td  class="yiti" height="35">其他意见建议 <span style="color:#999999; font-size:14px;">()</span></td>
+	  </tr>
+	  <tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+	  <tr>
+		<td style="padding-left:5%;"><textarea name="yijian" style="width:90%; height:60px;"></textarea></td>
+	  </tr>
+
+		  
+		</table>
+
+		</td>
+	  </tr>
+
+	  </table>
+
+	<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:20px;">
+	  <tr>
+		<td height="70" align="right" style="margin-right:20px;">
+		<div style="margin-right:401px;"><input name="" type="image"  src="images/save.png"/></div>
+		&nbsp;&nbsp;<span style="font-size:14px; color:#ee0000; font-family:'新宋体'; margin-right:316px">（请将该部门评议项评完整，提交后不可更改）</span>
+		</td>
+	  </tr>
+	</table>
+	</form>
+
+	 </div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" id="savebtn" class="btn btn-primary" onclick="bianse('btntwo')">提交</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="oneone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		  </div>
+		  <div class="modal-body">
+				<div id="党委办公室、校长办公室" style=" margin-left:20px;" class="aaa"> 
+
+	
+
+ <div align="center" class="lan18b" style="margin-bottom:10px;">党委办公室、校长办公室</div>
+
+ 
+ <form action="?adminaction=editsave" name="form" method="post">
+ <input name="bumen" type="hidden" value="党委办公室、校长办公室" />
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+
+  <tr>
+    <td  class="yiti" height="35">服务质量 <span style="color:#999999; font-size:14px;">(强化服务意识、遵守职业道德，爱岗敬业、恪尽职守，热情周到、耐心细致，保证工作质量、提高师生满意率。)</span></td>
+  </tr>
+  <tr>
+    <td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+	  <tr>
+
+
+    <td width="10%" id="xuan1"  height="30"  align="center" ><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none;"  type="radio" value="党委办公室、校长办公室,1,1" onclick="bianse2('xuan1')"/>满意</label></td>
+	<!--<td width="10%" class="xuanxiang">满意</td>-->
+    <td width="10%" id="xuan2" height="30" align="center"><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none" type="radio" value="党委办公室、校长办公室,1,2" onclick="bianse2('xuan2')"/>基本满意</label></td>
+	<!--</label>-->
+    <td width="10%" id="xuan3" height="30" align="center"><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none" type="radio" value="党委办公室、校长办公室,1,3" onclick="bianse2('xuan3')"/>不了解</label></td>
+	<!--<td width="10%" class="xuanxiang">不了解</td>-->
+    <td width="10%" id="xuan4" height="30" align="center"><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none" type="radio" value="党委办公室、校长办公室,1,25" onclick="bianse2('xuan4')"/>不满意</label></td>
+	<!--<td width="10%" class="xuanxiang">不满意</td>-->
+	<td width="3%" class="xuanxiang">&nbsp;</td>
+
+	  </tr>
+	  
+	</table>
+
+	</td>
+  </tr>
+
+  <tr>
+    <td  class="yiti" height="35">工作业绩 <span style="color:#999999; font-size:14px;">(规章制度完善、执行规章制度到位，规范信息公开、优化办事程序，注重协调配合、按时办结工作事项，创新工作方式方法、努力解决工作难题。)</span></td>
+  </tr>
+  <tr>
+    <td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+	  <tr>
+
+
+    <td width="10%" id="xuan11"  height="30"  align="center" ><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none;"  type="radio" value="党委办公室、校长办公室,1,1" onclick="bianse2('xuan11')"/>满意</label></td>
+    <!--<td width="10%" class="xuanxiang">满意</td>-->
+    <td width="10%" id="xuan22" height="30" align="center"><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none" type="radio" value="党委办公室、校长办公室,1,2" onclick="bianse2('xuan22')"/>基本满意</label></td>
+    <!--</label>-->
+    <td width="10%" id="xuan33" height="30" align="center"><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none" type="radio" value="党委办公室、校长办公室,1,3" onclick="bianse2('xuan33')"/>不了解</label></td>
+    <!--<td width="10%" class="xuanxiang">不了解</td>-->
+    <td width="10%" id="xuan44" height="30" align="center"><label class="btn-default" style="background:rgba(204, 204, 204, 0);width:100%;"><input name="xuanxiang3" style="display:none" type="radio" value="党委办公室、校长办公室,1,25" onclick="bianse2('xuan44')"/>不满意</label></td>
+    <!--<td width="10%" class="xuanxiang">不满意</td>-->
+    <td width="3%" class="xuanxiang">&nbsp;</td>
+
+	  </tr>
+	  
+	</table>
+
+	</td>
+  </tr>
+
+  <tr>
+    <td  class="yiti" height="35">工作纪律 <span style="color:#999999; font-size:14px;">(遵守工作时间、履行岗位职责，工作精神状态饱满、保证工作质量和时效，工作时间不做与工作无关的事情。)</span></td>
+  </tr>
+  <tr>
+    <td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+	  <tr>
+
+    <td width="10%" height="30" align="center" ><label><input name="xuanxiang3" style="display:block"  type="radio" value="党委办公室、校长办公室,3,1" />满意</label></td>
+	<!--<td width="10%" class="xuanxiang">满意</td>-->
+    <td width="10%" height="30" align="center"><label><input name="xuanxiang3" style="display:block" type="radio" value="党委办公室、校长办公室,3,2" />基本满意</label></td>
+	<!--</label>-->
+    <td width="10%" height="30" align="center"><label><input name="xuanxiang3" style="display:block" type="radio" value="党委办公室、校长办公室,3,3" />不了解</label></td>
+	<!--<td width="10%" class="xuanxiang">不了解</td>-->
+    <td width="10%" height="30" align="center"><label><input name="xuanxiang3" style="display:block" type="radio" value="党委办公室、校长办公室,3,25" />不满意</label></td>
+	<!--<td width="10%" class="xuanxiang">不满意</td>-->
+	<td width="3%" class="xuanxiang">&nbsp;</td>
+
+	  </tr>
+	  
+	</table>
+
+	</td>
+  </tr>
+
+  <tr>
+    <td  class="yiti" height="35">廉洁自律 <span style="color:#999999; font-size:14px;">(认真落实党风廉政建设责任制，遵守中央八项规定，讲规矩、守纪律，厉行节约、公私分明。)</span></td>
+  </tr>
+  <tr>
+    <td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+	  <tr>
+
+
+    <td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="党委办公室、校长办公室,6,1" /></td>
+	<td width="10%" class="xuanxiang">满意</td>
+
+
+
+
+    <td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="党委办公室、校长办公室,6,2" /></td>
+	<td width="10%" class="xuanxiang">基本满意</td>
+
+
+
+
+    <td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="党委办公室、校长办公室,6,3" /></td>
+	<td width="10%" class="xuanxiang">不了解</td>
+
+
+
+
+    <td width="10%" height="30" align="center"><input name="xuanxiang4" type="radio" value="党委办公室、校长办公室,6,25" /></td>
+	<td width="10%" class="xuanxiang">不满意</td>
+
+
+
+	<td width="3%" class="xuanxiang">&nbsp;</td>
+
+	  </tr>
+	  
+	</table>
+
+	</td>
+  </tr>
+
+  <tr>
+    <td  class="yiti" height="35">其他意见建议 <span style="color:#999999; font-size:14px;">()</span></td>
+  </tr>
+  <tr>
+    <td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+	<td style="padding-left:5%;"><textarea name="yijian" style="width:90%; height:60px;"></textarea></td>
+  </tr>
+
+	  
+	</table>
+
+	</td>
+  </tr>
+
+  </table>
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:20px;">
+  <tr>
+    <td height="70" align="right" style="margin-right:20px;">
+	<div style="margin-right:401px;"><input name="" type="image"  src="images/save.png"/></div>
+	&nbsp;&nbsp;<span style="font-size:14px; color:#ee0000; font-family:'新宋体'; margin-right:316px">（请将该部门评议项评完整，提交后不可更改）</span>
+	</td>
+  </tr>
+</table>
+</form>
+
+ </div> 
+
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" id="savebtn" class="btn btn-primary" onclick="bianse('btnone')">提交</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</div>
+	 
+ 
+	<script type="text/javascript">
+	function qiehuan(id){
+		$(".bbb").hide();
+		$(".aaa").hide();
+		$("#"+id).show();
+	}
+	function bianse(btnid){
+		document.getElementById(btnid).className = "btn btn-primary btn-lg"; 
+	}
+    function bianse2(btnid){
+        if(btnid=='xuan1'){
+            document.getElementById('xuan1').className = "ssd"; 
+            document.getElementById('xuan2').className = "btn-default"; 
+            document.getElementById('xuan3').className = "btn-default"; 
+            document.getElementById('xuan4').className = "btn-default"; 
+        }
+        if(btnid=='xuan2'){
+            document.getElementById('xuan2').className = "ssd"; 
+            document.getElementById('xuan1').className = "btn-default"; 
+            document.getElementById('xuan3').className = "btn-default"; 
+            document.getElementById('xuan4').className = "btn-default"; 
+        }
+        if(btnid=='xuan3'){
+            document.getElementById('xuan3').className = "ssd"; 
+            document.getElementById('xuan2').className = "btn-default"; 
+            document.getElementById('xuan1').className = "btn-default"; 
+            document.getElementById('xuan4').className = "btn-default"; 
+        }
+        if(btnid=='xuan4'){
+            document.getElementById('xuan4').className = "ssd"; 
+            document.getElementById('xuan2').className = "btn-default"; 
+            document.getElementById('xuan3').className = "btn-default"; 
+            document.getElementById('xuan1').className = "btn-default"; 
+        }
+
+        if(btnid=='xuan11'){
+            document.getElementById('xuan11').className = "ssd"; 
+            document.getElementById('xuan22').className = "btn-default"; 
+            document.getElementById('xuan33').className = "btn-default"; 
+            document.getElementById('xuan44').className = "btn-default"; 
+        }
+        if(btnid=='xuan22'){
+            document.getElementById('xuan22').className = "ssd"; 
+            document.getElementById('xuan11').className = "btn-default"; 
+            document.getElementById('xuan33').className = "btn-default"; 
+            document.getElementById('xuan44').className = "btn-default"; 
+        }
+        if(btnid=='xuan33'){
+            document.getElementById('xuan33').className = "ssd"; 
+            document.getElementById('xuan22').className = "btn-default"; 
+            document.getElementById('xuan11').className = "btn-default"; 
+            document.getElementById('xuan44').className = "btn-default"; 
+        }
+        if(btnid=='xuan44'){
+            document.getElementById('xuan44').className = "ssd"; 
+            document.getElementById('xuan22').className = "btn-default"; 
+            document.getElementById('xuan33').className = "btn-default"; 
+            document.getElementById('xuan11').className = "btn-default"; 
+        }
+        
+    }
+	</script>
+	
+	<!--<script>
+	  function bianse(btnid){
+		document.getElementById(btnid).className = "txt"; 
+	}
+	</script>
+-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../jwjc/js/bootstrap.min.js"></script>
+  </body>
+</html>
